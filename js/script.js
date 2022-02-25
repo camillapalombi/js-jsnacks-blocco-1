@@ -59,7 +59,7 @@ console.log(sumNum)
 */
 
 
-/*Snack 4:*/
+/*Snack 4:
 
 let arrGuests = ['Paolo' , 'Gianni' , 'Camilla' , 'Franco' , 'Erika'];
 
@@ -78,3 +78,23 @@ if (found) {
 } else {
     console.log('Non puoi partecipare');
 }
+*/
+
+
+/*Snack 5*/
+
+let arrEmpty = [];
+
+for (i = 0; i < 6; i++) {
+
+    let userNumber = parseInt(prompt('Inserisci un numero'));
+
+    if (userNumber % 2 == 1) {
+        arrEmpty.push(userNumber)
+    }
+}
+
+console.log(arrEmpty)
+
+
+
