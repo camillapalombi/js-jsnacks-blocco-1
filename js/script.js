@@ -57,3 +57,24 @@ for (i = 0; i < arrNumbers.length; i++) {
 
 console.log(sumNum)
 */
+
+
+/*Snack 4:*/
+
+let arrGuests = ['Paolo' , 'Gianni' , 'Camilla' , 'Franco' , 'Erika'];
+
+let requestName = prompt('Scrivi qui il tuo nome');
+
+let found = false;
+
+for (i = 0; i < arrGuests.length; i++) {
+    if (arrGuests[i].toLocaleLowerCase() == requestName.toLocaleLowerCase()) {
+        found = true;
+    }
+}
+
+if (found) {
+    console.log('Puoi partecipare');
+} else {
+    console.log('Non puoi partecipare');
+}
