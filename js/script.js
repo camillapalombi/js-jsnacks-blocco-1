@@ -81,7 +81,7 @@ if (found) {
 */
 
 
-/*Snack 5*/
+/*Snack 5
 
 let arrEmpty = [];
 
@@ -95,6 +95,44 @@ for (i = 0; i < 6; i++) {
 }
 
 console.log(arrEmpty)
+*/
+
+
+
+/*Snack 6*/
+
+const userNum = prompt('Scrivi un numero composto da 4 cifre');
+
+let sumNumber = 0;
+
+if (userNum < 1000) {
+    console.log('numero troppo piccolo');
+} else if (userNum > 9999) {
+    console.log('numero troppo grande');
+}
+else {
+    for ( let i = 0; i < userNum.toString().length; i++) {
+
+        sumNumber += parseInt(userNum.toString()[i]);
+    }
+
+    console.log(`Somma delle cifre che compongono il numero : ${sumNumber}`);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
