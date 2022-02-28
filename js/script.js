@@ -198,7 +198,6 @@ console.log(`Somma dei numeri inseriti: ${sumNum}`);
 
 
 /*Snack 2.2*/
-    /*CICLO FOR*/
 
 let number = parseInt(prompt('Inserisci un numero'));
 
@@ -207,6 +206,7 @@ if (number % 2 == 0) {
 } else {
     console.log(number + 1);
 }
+
 
 
 
