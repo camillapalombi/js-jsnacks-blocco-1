@@ -6,7 +6,7 @@ let number2 = parseInt(prompt('inserisci un numero'));
 
 if (number1 > number2) {
     console.log(number1)
-} else if (number1 == number2) {
+} else if (number1 === number2) {
     console.log('I numeri sono uguali')
 } else {
     console.log(number2)
@@ -25,7 +25,7 @@ if (word1.length > word2.length) {
 
     console.log(word2 , word1);
 
-} else if (word1.length == word2.length) {
+} else if (word1.length === word2.length) {
 
     console.log('Le parole hanno la stessa lunghezza!');
 
@@ -38,10 +38,11 @@ if (word1.length > word2.length) {
 
 
 /*Snacks 3:
+
 let arrNumbers = [];
 
-for (i = 0; i < 10; i++) {
-    let userNumber= parseInt(prompt('dammi un numero'));
+for (let i = 0; i < 10; i++) {
+    let userNumber = parseInt(prompt('dammi un numero'));
     arrNumbers.push(userNumber);
 }
 
@@ -62,7 +63,7 @@ console.log(sumNum)
 
 let sumNum = 0;
 
-for (i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
     let number = parseInt(prompt('Dammi un numero'));
     sumNum += number;
 }
@@ -78,8 +79,8 @@ let requestName = prompt('Scrivi qui il tuo nome');
 
 let found = false;
 
-for (i = 0; i < arrGuests.length; i++) {
-    if (arrGuests[i].toLocaleLowerCase() == requestName.toLocaleLowerCase()) {
+for (let i = 0; i < arrGuests.length; i++) {
+    if (arrGuests[i].toLocaleLowerCase() === requestName.toLocaleLowerCase()) {
         found = true;
     }
 }
@@ -96,11 +97,11 @@ if (found) {
 
 let arrEmpty = [];
 
-for (i = 0; i < 6; i++) {
+for (let i = 0; i < 6; i++) {
 
     let userNumber = parseInt(prompt('Inserisci un numero'));
 
-    if (userNumber % 2 == 1) {
+    if (userNumber % 2 === 1) {
         arrEmpty.push(userNumber)
     }
 }
@@ -122,14 +123,15 @@ if (userNum < 1000) {
     console.log('numero troppo grande');
 }
 else {
-    for ( let i = 0; i < userNum.toString().length; i++) {
+    for ( let i = 0; i < userNum.length; i++) {
 
-        sumNumber += parseInt(userNum.toString()[i]);
+        sumNumber += parseInt(userNum[i]);
     }
 
     console.log(`Somma delle cifre che compongono il numero : ${sumNumber}`);
 }
 */
+
 
 
 /*Snack 1.9*/
@@ -172,7 +174,7 @@ console.log(`La media dei numeri è: ${mediaNumbers}`);
 
 let sumNum = 0;
 
-for (i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
 
     let numbers = parseInt(prompt('Inserisci un numero'));
     sumNum += numbers;
@@ -220,11 +222,11 @@ let arrGuests = [];
 
  for (let i = 0; i < 3; i++) {
 
-    let casualName = Math.floor(Math.random()*arrName.length);
-    let casualSurname = Math.floor(Math.random()*arrSurname.length);
+    let randomName = Math.floor(Math.random()*arrName.length);
+    let randomSurname = Math.floor(Math.random()*arrSurname.length);
 
-    let valueName = arrName[casualName];
-    let valueSurname = arrSurname[casualSurname];
+    let valueName = arrName[randomName];
+    let valueSurname = arrSurname[randomSurname];
 
     arrGuests.push(valueName + ' ' + valueSurname);
 
@@ -233,8 +235,8 @@ let arrGuests = [];
  console.log(arrGuests);
  */
 
- 
- /*CICLO WHILE*/
+
+ /*CICLO WHILE
 const arrName = ['Marta' , 'Giulia' , 'Matteo' , 'Ernesto' , 'Erika' , 'Camilla'];
 
 const arrSurname = ['Rossi' , 'Muccini' , 'Capone' , 'Palombi' , 'Esposito', 'Gemini'];
@@ -244,11 +246,11 @@ let i = 0;
 
  while (i < 3) {
 
-    let casualName = Math.floor(Math.random()*arrName.length);
-    let casualSurname = Math.floor(Math.random()*arrSurname.length);
+    let randomName = Math.floor(Math.random()*arrName.length);
+    let randomSurname = Math.floor(Math.random()*arrSurname.length);
 
-    let valueName = arrName[casualName];
-    let valueSurname = arrSurname[casualSurname];
+    let valueName = arrName[randomName];
+    let valueSurname = arrSurname[randomSurname];
 
     arrGuests.push(valueName + ' ' + valueSurname);
     i++;
@@ -257,7 +259,7 @@ let i = 0;
 
  console.log(arrGuests);
 
-
+*/
 
 
 
