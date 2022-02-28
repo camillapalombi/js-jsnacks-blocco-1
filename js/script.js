@@ -58,7 +58,7 @@ for (i = 0; i < arrNumbers.length; i++) {
 console.log(sumNum)
 */
 
-/*Snack 3.1*/
+/*Snack 3.1
 
 let sumNum = 0;
 
@@ -67,6 +67,7 @@ for (i = 0; i < 10; i++) {
     sumNum += number;
 }
 console.log(`Somma dei 10 numeri: ${sumNum}`);
+*/
 
 
 /*Snack 4:
@@ -131,10 +132,37 @@ else {
 */
 
 
+/*Snack 7*/
+
+    /*CICLO FOR
+
+let sumNum = 0;
+
+for (let i = 1; i <= 10; i++) {
+    
+    sumNum += i;
+}
+
+let mediaNumbers = sumNum / 10;
+console.log(`Somma dei 10 numeri: ${sumNum}`);
+console.log(`La media dei numeri è: ${mediaNumbers}`);
+*/
 
 
+    /*CICLO WHILE*/
+let sumNum = 0;
+let i = 0;
 
+while (i <= 10) {
 
+    sumNum += i;
+    i++;
+
+}
+
+let mediaNumbers = sumNum / 10;
+console.log(`Somma dei 10 numeri: ${sumNum}`);
+console.log(`La media dei numeri è: ${mediaNumbers}`);
 
 
 
