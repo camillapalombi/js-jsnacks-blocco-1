@@ -211,7 +211,7 @@ if (number % 2 == 0) {
 
 /*Snack 2.3*/
 
-
+    /*CICLO FOR
 const arrName = ['Marta' , 'Giulia' , 'Matteo' , 'Ernesto' , 'Erika' , 'Camilla'];
 
 const arrSurname = ['Rossi' , 'Muccini' , 'Capone' , 'Palombi' , 'Esposito', 'Gemini'];
@@ -227,6 +227,31 @@ let arrGuests = [];
     let valueSurname = arrSurname[casualSurname];
 
     arrGuests.push(valueName + ' ' + valueSurname);
+
+ }
+
+ console.log(arrGuests);
+ */
+
+ 
+ /*CICLO WHILE*/
+const arrName = ['Marta' , 'Giulia' , 'Matteo' , 'Ernesto' , 'Erika' , 'Camilla'];
+
+const arrSurname = ['Rossi' , 'Muccini' , 'Capone' , 'Palombi' , 'Esposito', 'Gemini'];
+
+let arrGuests = [];
+let i = 0;
+
+ while (i < 3) {
+
+    let casualName = Math.floor(Math.random()*arrName.length);
+    let casualSurname = Math.floor(Math.random()*arrSurname.length);
+
+    let valueName = arrName[casualName];
+    let valueSurname = arrSurname[casualSurname];
+
+    arrGuests.push(valueName + ' ' + valueSurname);
+    i++;
 
  }
 
