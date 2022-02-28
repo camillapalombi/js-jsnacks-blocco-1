@@ -169,7 +169,7 @@ console.log(`La media dei numeri è: ${mediaNumbers}`);
 /*Snack 2.1*/
 
     /*CICLO FOR
-    
+
 let sumNum = 0;
 
 for (i = 0; i < 5; i++) {
@@ -182,7 +182,7 @@ for (i = 0; i < 5; i++) {
 console.log(`Somma dei numeri inseriti: ${sumNum}`);
 */
 
-    /*CICLO WHILE*/
+    /*CICLO WHILE
 
 let sumNum = 0;
 let i = 0;
@@ -194,6 +194,19 @@ while (i < 5) {
 }
 
 console.log(`Somma dei numeri inseriti: ${sumNum}`);
+*/
+
+
+/*Snack 2.2*/
+    /*CICLO FOR*/
+
+let number = parseInt(prompt('Inserisci un numero'));
+
+if (number % 2 == 0) {
+    console.log(number);
+} else {
+    console.log(number + 1);
+}
 
 
 
