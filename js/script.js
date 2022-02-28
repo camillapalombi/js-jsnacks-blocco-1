@@ -132,7 +132,7 @@ else {
 */
 
 
-/*Snack 7*/
+/*Snack 1.9*/
 
     /*CICLO FOR
 
@@ -149,7 +149,7 @@ console.log(`La media dei numeri è: ${mediaNumbers}`);
 */
 
 
-    /*CICLO WHILE*/
+    /*CICLO WHILE
 let sumNum = 0;
 let i = 0;
 
@@ -160,9 +160,41 @@ while (i <= 10) {
 
 }
 
-let mediaNumbers = sumNum / 10;
+ let mediaNumbers = sumNum / 10;
 console.log(`Somma dei 10 numeri: ${sumNum}`);
 console.log(`La media dei numeri è: ${mediaNumbers}`);
+*/
+
+
+/*Snack 2.1*/
+
+    /*CICLO FOR
+    
+let sumNum = 0;
+
+for (i = 0; i < 5; i++) {
+
+    let numbers = parseInt(prompt('Inserisci un numero'));
+    sumNum += numbers;
+
+}
+
+console.log(`Somma dei numeri inseriti: ${sumNum}`);
+*/
+
+    /*CICLO WHILE*/
+
+let sumNum = 0;
+let i = 0;
+
+while (i < 5) {
+    let numbers = parseInt(prompt('Inserisci un numero'));
+    sumNum += numbers;
+    i++;
+}
+
+console.log(`Somma dei numeri inseriti: ${sumNum}`);
+
 
 
 
