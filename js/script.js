@@ -58,6 +58,16 @@ for (i = 0; i < arrNumbers.length; i++) {
 console.log(sumNum)
 */
 
+/*Snack 3.1*/
+
+let sumNum = 0;
+
+for (i = 0; i < 10; i++) {
+    let number = parseInt(prompt('Dammi un numero'));
+    sumNum += number;
+}
+console.log(`Somma dei 10 numeri: ${sumNum}`);
+
 
 /*Snack 4:
 
@@ -99,7 +109,7 @@ console.log(arrEmpty)
 
 
 
-/*Snack 6*/
+/*Snack 6
 
 const userNum = prompt('Scrivi un numero composto da 4 cifre');
 
@@ -118,6 +128,7 @@ else {
 
     console.log(`Somma delle cifre che compongono il numero : ${sumNumber}`);
 }
+*/
 
 
 
