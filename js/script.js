@@ -197,7 +197,7 @@ console.log(`Somma dei numeri inseriti: ${sumNum}`);
 */
 
 
-/*Snack 2.2*/
+/*Snack 2.2
 
 let number = parseInt(prompt('Inserisci un numero'));
 
@@ -206,6 +206,33 @@ if (number % 2 == 0) {
 } else {
     console.log(number + 1);
 }
+*/
+
+
+/*Snack 2.3*/
+
+const arrName = ['Marta' , 'Giulia' , 'Matteo' , 'Ernesto' , 'Erika' , 'Camilla'];
+
+const arrSurname = ['Rossi' , 'Muccini' , 'Capone' , 'Palombi' , 'Esposito', 'Gemini'];
+
+let arrUnion = [...arrName , ...arrSurname];
+
+let arrGuests1 = [arrUnion[1] + ' ' + arrUnion[6]];
+let arrGuests2 = [arrUnion[2] + ' ' + arrUnion[7]];
+let arrGuests3 = [arrUnion[3] + ' ' + arrUnion[8]];
+
+let arrFullName = [...arrGuests1, ...arrGuests2, ...arrGuests3];
+
+console.log(arrFullName);
+
+
+
+
+
+
+
+
+
 
 
 
