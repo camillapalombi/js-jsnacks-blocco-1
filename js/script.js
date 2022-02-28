@@ -211,19 +211,31 @@ if (number % 2 == 0) {
 
 /*Snack 2.3*/
 
+
 const arrName = ['Marta' , 'Giulia' , 'Matteo' , 'Ernesto' , 'Erika' , 'Camilla'];
 
 const arrSurname = ['Rossi' , 'Muccini' , 'Capone' , 'Palombi' , 'Esposito', 'Gemini'];
 
-let arrUnion = [...arrName , ...arrSurname];
+let arrGuests = [];
 
-let arrGuests1 = [arrUnion[1] + ' ' + arrUnion[6]];
-let arrGuests2 = [arrUnion[2] + ' ' + arrUnion[7]];
-let arrGuests3 = [arrUnion[3] + ' ' + arrUnion[8]];
+ for (let i = 0; i < 3; i++) {
 
-let arrFullName = [...arrGuests1, ...arrGuests2, ...arrGuests3];
+    let casualName = Math.floor(Math.random()*arrName.length);
+    let casualSurname = Math.floor(Math.random()*arrSurname.length);
 
-console.log(arrFullName);
+    let valueName = arrName[casualName];
+    let valueSurname = arrSurname[casualSurname];
+
+    arrGuests.push(valueName + ' ' + valueSurname);
+
+ }
+
+ console.log(arrGuests);
+
+
+
+
+
 
 
 
